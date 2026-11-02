@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sharon Robinson | Aspiring Software Engineer</title>
+  <meta name="description" content="Personal portfolio of Sharon Robinson, a First-Year B.Tech CSE student at Newton School of Technology. Aspiring Software Engineer, passionate learner, and national sports medalist.">
+
+  <!-- Google Fonts: Modern Tech + Handwritten Accent -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       BACKGROUND GLOWING ELEMENTS (Pure CSS Ambient Orbs & Stars)
+       ========================================================= -->
+  <div class="ambient-glow orb-purple" aria-hidden="true"></div>
+  <div class="ambient-glow orb-blue" aria-hidden="true"></div>
+  <div class="ambient-glow orb-pink" aria-hidden="true"></div>
+  <div class="ambient-glow orb-cyan" aria-hidden="true"></div>
+
+  <!-- Subtle Decorative Floating Stars -->
+  <div class="star star-1" aria-hidden="true">✦</div>
+  <div class="star star-2" aria-hidden="true">★</div>
+  <div class="star star-3" aria-hidden="true">✦</div>
+  <div class="star star-4" aria-hidden="true">★</div>
+  <div class="star star-5" aria-hidden="true">✦</div>
+  <div class="star star-6" aria-hidden="true">★</div>
+
+  <!-- =========================================================
+       NAVIGATION BAR
+       Transparent, Glassmorphic, with Glowing Star Logo
+       ========================================================= -->
+  <header class="navbar" id="top">
+    <div class="nav-container">
+      
+      <!-- Brand Logo: Glowing Star + Initials + Full Name -->
+      <a href="#home" class="nav-brand">
+        <span class="brand-badge">
+          <svg class="brand-star-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+          </svg>
+          <span class="brand-initials">SR</span>
+        </span>
+        <span class="brand-name">Sharon Robinson</span>
+      </a>
+
+      <!-- Pure CSS Mobile Menu Checkbox Toggle (No JavaScript Required!) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link nav-btn-highlight">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================================================
+         HERO SECTION (Primary Visual Showcase)
+         ========================================================= -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+
+        <!-- Left Column: Introduction & Call-to-Actions -->
+        <div class="hero-content">
+          
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            <span>Welcome to my portfolio</span>
+          </div>
+
+          <p class="hero-greeting">Hello, I'm</p>
+          <h1 class="hero-name">SHARON ROBINSON</h1>
+          <p class="hero-role">Aspiring Software Engineer <span class="role-divider">|</span> CSE Student</p>
+
+          <blockquote class="hero-quote">
+            <span class="quote-mark">“</span>
+            A curious mind, a learner at heart, and a dreamer on the journey to build something extraordinary.
+            <span class="quote-mark">”</span>
+          </blockquote>
+
+          <!-- Hero Action Buttons -->
+          <div class="hero-actions">
+            <a href="#about" class="btn btn-primary">
+              <span>Explore My Journey</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>Contact Me</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Social Links with Circular Glassmorphic Icons -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <div class="social-links-wrapper">
+              
+              <!-- GitHub -->
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sharon Robinson GitHub Profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                </svg>
+              </a>
+
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Sharon Robinson LinkedIn Profile">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:sharon.robinson@example.com" class="social-icon" aria-label="Email Sharon Robinson">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Side: Portrait Visual Showcase with Glowing Neon Rings & Orbit -->
+        <div class="hero-visual">
+          <div class="portrait-stage">
+            
+            <!-- Soft Purple & Blue Ambient Backdrop Glow -->
+            <div class="portrait-backdrop-glow" aria-hidden="true"></div>
+
+            <!-- Glowing Concentric Neon Rings -->
+            <div class="portrait-outer-ring" aria-hidden="true"></div>
+            <div class="portrait-mid-ring" aria-hidden="true"></div>
+
+            <!-- Orbit Track 1 with Rotating Glowing Satellite -->
+            <div class="orbit-track track-one" aria-hidden="true">
+              <div class="orbit-satellite satellite-cyan"></div>
+            </div>
+
+            <!-- Orbit Track 2 with Counter-Rotating Satellite -->
+            <div class="orbit-track track-two" aria-hidden="true">
+              <div class="orbit-satellite satellite-pink"></div>
+            </div>
+
+            <!-- Portrait Frame & Image -->
+            <div class="portrait-frame">
+              <img src="profile.jpg" alt="Sharon Robinson - Aspiring Software Engineer" class="portrait-image">
+              <div class="portrait-sheen" aria-hidden="true"></div>
+            </div>
+
+            <!-- Floating Glassmorphism Education Card -->
+            <div class="floating-glass-card">
+              <div class="glass-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="glass-card-text">
+                <span class="card-title">B.Tech CSE</span>
+                <span class="card-subtitle">Newton School of Technology</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Handwritten-Style Phrase at Bottom of Portrait -->
+          <div class="hero-handwritten-wrapper">
+            <span class="sparkle-left">✦</span>
+            <p class="handwritten-phrase">“Dream • Learn • Build”</p>
+            <span class="sparkle-right">✦</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Glowing Abstract Gradient Wave Transition at Bottom of Hero -->
+      <div class="hero-wave-divider" aria-hidden="true">
+        <svg viewBox="0 0 1440 120" fill="none" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#3a86ff" stop-opacity="0.25" />
+              <stop offset="50%" stop-color="#8a2be2" stop-opacity="0.35" />
+              <stop offset="100%" stop-color="#f72585" stop-opacity="0.25" />
+            </linearGradient>
+            <linearGradient id="waveGradientSolid" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#0b0f24" stop-opacity="0.9" />
+              <stop offset="50%" stop-color="#0e1330" stop-opacity="0.95" />
+              <stop offset="100%" stop-color="#070913" />
+            </linearGradient>
+          </defs>
+          <path d="M0,32L48,42.7C96,53,192,75,288,80C384,85,480,75,576,58.7C672,43,768,21,864,21.3C960,21,1056,43,1152,53.3C1248,64,1344,64,1392,64L1440,64L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="url(#waveGradient)"></path>
+          <path d="M0,64L48,69.3C96,75,192,85,288,80C384,75,480,53,576,48C672,43,768,53,864,64C960,75,1056,85,1152,80C1248,75,1344,53,1392,42.7L1440,32L1440,120L1392,120C1344,120,1248,120,1152,120C1056,120,960,120,864,120C768,120,672,120,576,120C480,120,384,120,288,120C192,120,96,120,48,120L0,120Z" fill="url(#waveGradientSolid)"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ABOUT ME SECTION
+         ========================================================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Glassmorphic Card -->
+          <div class="glass-card about-story-card">
+            <div class="card-glow-header">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+              <span class="terminal-title">sharon_bio.md</span>
+            </div>
+            
+            <div class="story-content">
+              <h3 class="story-heading">Engineering My Journey, One Line of Code at a Time</h3>
+              <p class="story-paragraph">
+                I am a first-year <strong>B.Tech Computer Science</strong> student at <strong>Newton School of Technology</strong>. I am deeply passionate about technology, learning programming, and exploring creative ideas that bring purposeful software to life.
+              </p>
+              <p class="story-paragraph">
+                I am currently at the beginning of my coding journey and firmly believe in <em>learning through practice and experimentation</em>. When I am not writing code or exploring algorithms, you can find me drawing parallels between the high-pressure discipline of competitive athletics and the perseverance required to debug complex programs.
+              </p>
+
+              <div class="about-stats-row">
+                <div class="stat-box">
+                  <span class="stat-number">1st</span>
+                  <span class="stat-label">Year B.Tech CSE</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">2x</span>
+                  <span class="stat-label">Athlete of the Year</span>
+                </div>
+                <div class="stat-box">
+                  <span class="stat-number">100%</span>
+                  <span class="stat-label">Curiosity & Dedication</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Key Highlights Grid -->
+          <div class="about-pillars-grid">
+            
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon-box icon-purple">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <h4 class="pillar-title">Academic Home</h4>
+              <p class="pillar-desc">Newton School of Technology, B.Tech CSE (2024–2028). Immersing in foundational computer science principles.</p>
+            </div>
+
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon-box icon-blue">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                </svg>
+              </div>
+              <h4 class="pillar-title">Learning Mindset</h4>
+              <p class="pillar-desc">Learning by doing. Actively building projects, writing clean documentation, and exploring modern developer tools.</p>
+            </div>
+
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon-box icon-pink">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="7"></circle>
+                  <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+              </div>
+              <h4 class="pillar-title">Athletic Resilience</h4>
+              <p class="pillar-desc">National-level sports medalist with 2 Athlete of the Year honors—channeling tenacity into every debugging session.</p>
+            </div>
+
+            <div class="glass-card pillar-card">
+              <div class="pillar-icon-box icon-cyan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <h4 class="pillar-title">Future Vision</h4>
+              <p class="pillar-desc">Aspiring to engineer impactful software solutions that solve real community challenges with elegant tech.</p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         ACHIEVEMENTS SECTION
+         ========================================================= -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Milestones & Recognition</span>
+          <h2 class="section-title">Achievements</h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Dedicated athletic performance has taught me the power of consistency, resilience, and laser-sharp focus—qualities that directly shape how I approach software engineering.
+          </p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <!-- Achievement 1: Athlete of the Year -->
+          <div class="glass-card achievement-card achievement-gold">
+            <div class="achievement-icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="7"></circle>
+                <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+              </svg>
+            </div>
+            <div class="achievement-badge-pill">2 Times Awardee</div>
+            <h3 class="achievement-title">Athlete of the Year</h3>
+            <p class="achievement-desc">
+              Honored twice with the Athlete of the Year award for all-around excellence, sportsmanship, and continuous leadership on the field.
+            </p>
+            <div class="achievement-highlight">
+              <span>🏆 Distinction for Overall Athletic Excellence</span>
+            </div>
+          </div>
+
+          <!-- Achievement 2: National-Level Sports Medal Winner -->
+          <div class="glass-card achievement-card achievement-purple">
+            <div class="achievement-icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="achievement-badge-pill">National Level</div>
+            <h3 class="achievement-title">National-Level Sports Medal Winner</h3>
+            <p class="achievement-desc">
+              Secured a podium medal at the National Sports Championship, representing rigorous preparation, competitive composure, and relentless dedication.
+            </p>
+            <div class="achievement-highlight">
+              <span>🥇 National Championship Podium Finish</span>
+            </div>
+          </div>
+
+          <!-- Achievement 3: Active Hackathon & Tech Event Participant -->
+          <div class="glass-card achievement-card achievement-blue">
+            <div class="achievement-icon-circle">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="achievement-badge-pill">Tech Community</div>
+            <h3 class="achievement-title">Hackathon & Tech Events Participant</h3>
+            <p class="achievement-desc">
+              Active participant in freshman hackathons, peer coding sessions, and tech workshops at Newton School of Technology, expanding practical development skills.
+            </p>
+            <div class="achievement-highlight">
+              <span>🚀 Continuous Collaborative Learning</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CONTACT SECTION
+         ========================================================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="section-header">
+          <span class="section-tag">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <div class="title-underline"></div>
+          <p class="section-description">
+            Whether you want to share learning advice, discuss student collaborations, explore tech ideas, or simply say hello, my inbox is always open!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left Column: Contact Information Cards -->
+          <div class="contact-info-col">
+            
+            <div class="glass-card contact-card">
+              <div class="contact-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">Email Me</span>
+                <a href="mailto:sharon.robinson@example.com" class="contact-card-value">sharon.robinson@example.com</a>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card">
+              <div class="contact-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">Campus & Degree</span>
+                <span class="contact-card-value">B.Tech CSE, Newton School of Technology</span>
+              </div>
+            </div>
+
+            <div class="glass-card contact-card">
+              <div class="contact-icon-wrapper">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-card-label">Social Media</span>
+                <div class="contact-social-pills">
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-pill">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Availability Status Badge -->
+            <div class="availability-card">
+              <span class="status-pulse-dot"></span>
+              <div class="availability-text">
+                <strong>Status:</strong> Open to peer study groups, tech workshops & mentorship advice!
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right Column: Glassmorphic Contact Form (Pure HTML5 & CSS3) -->
+          <div class="glass-card contact-form-card">
+            <h3 class="form-title">Send A Message</h3>
+            <p class="form-subtitle">Leave a quick note and I'll get back to you as soon as possible.</p>
+
+            <form class="contact-form" action="#" method="POST">
+              
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subject</label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="e.g. Connecting regarding tech ideas" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Message</label>
+                <textarea id="contact-message" name="message" class="form-textarea" rows="4" placeholder="Write your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="footer">
+    <div class="container footer-content">
+      
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="nav-brand">
+            <span class="brand-badge">
+              <svg class="brand-star-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              <span class="brand-initials">SR</span>
+            </span>
+            <span class="brand-name">Sharon Robinson</span>
+          </a>
+          <p class="footer-tagline">Aspiring Software Engineer • B.Tech CSE at Newton School of Technology</p>
+        </div>
+
+        <div class="footer-motto">
+          <p class="handwritten-phrase footer-handwritten">“Dream • Learn • Build”</p>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2024-2025 Sharon Robinson. Handcrafted with HTML5 & CSS3.
+        </p>
+
+        <a href="#top" class="back-to-top" aria-label="Back to top of page">
+          <span>Back to Top</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
